@@ -5,13 +5,13 @@ DashDaemon::DashDaemon(int &sock, bool b) : Connection(sock),mcf_target_buffer(5
     if (!b)
     {
         // task 1 - init buffer 6 seconds
-        startTask("CONNECT 6 http://kufstein2.lmt.ei.tum.de/video/",0);
+        startTask("CONNECT 6 http://VIDEO_URL_HERE",0);
         cout << "task 1 done..."<< endl;
     }
     else
     {
         // task 2
-        startTask("CONNECT 6 http://kufstein2.lmt.ei.tum.de/video/",1);
+        startTask("CONNECT 6 http://VIDEO_URL_HERE",1);
         cout << "task 2 done..."<< endl;
     }
 
