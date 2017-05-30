@@ -14,7 +14,7 @@ bool sortorder(const pair<unsigned short, vector<char> > &left, const pair<unsig
 
 bool FetchMusic::requestMusic()
 {
-    char buf[100] = "MUSIC 03627456";
+    char buf[100] = "MUSIC XXXX";
     char recv_buf[1500];
     string test;
     u_int16_t seq_no=0;
